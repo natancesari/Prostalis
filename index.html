@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prostalis | Schnelle Bewältigung von Prostataentzündung</title>
+    <style>
+        /* Grundlegendes Reset & Typografie */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+        h1, h2, h3 {
+            color: #004d61;
+            margin-bottom: 15px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        
+        /* Layout-Klassen */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .section {
+            padding: 60px 0;
+            background-color: #fff;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        .section-dark {
+            background-color: #004d61;
+            color: #fff;
+        }
+        .section-dark h2, .section-dark h3 {
+            color: #fff;
+        }
+        
+        /* Header / Hero Bereich */
+        header {
+            background-color: #e63946;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            color: #fff;
+            font-size: 2.5em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+        }
+        .hero-subtitle {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            background-color: #ff9800;
+            color: #fff;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            transition: background-color 0.3s, transform 0.2s;
+            margin: 20px 0;
+        }
+        .btn:hover {
+            background-color: #e68a00;
+            transform: translateY(-2px);
+        }
+        .text-center {
+            text-align: center;
+        }
+
+        /* Preisgestaltung mit Bild */
+        .price-box {
+            background-color: #f1f8f9;
+            border: 2px dashed #004d61;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px auto;
+            max-width: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .price-box img {
+            max-width: 180px; /* Tamanho da imagem do produto */
+            height: auto;
+            object-fit: contain;
+        }
+        .price-details {
+            text-align: left;
+        }
+        .price-box .old-price {
+            text-decoration: line-through;
+            color: #888;
+            font-size: 1.2em;
+        }
+        .price-box .new-price {
+            color: #e63946;
+            font-size: 2.2em;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+
+        /* Grid für Statistiken & Listen */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .grid-4 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        
+        /* Warnhinweis */
+        .warning-box {
+            background-color: #e63946;
+            color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            font-weight: bold;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        /* Checkliste */
+        .check-list {
+            list-style: none;
+        }
+        .check-list li {
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+        .check-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: #ff9800;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        /* Statistik Boxen */
+        .stat-box {
+            text-align: center;
+            padding: 20px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 8px;
+        }
+        .stat-box h3 {
+            font-size: 2.5em;
+            margin-bottom: 5px;
+            color: #ff9800;
+        }
+
+        /* Experten-Sektion */
+        .expert-box {
+            background: #eef5f6;
+            padding: 30px;
+            border-left: 5px solid #004d61;
+            border-radius: 0 8px 8px 0;
+            margin: 30px 0;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            background-color: #333;
+            color: #ccc;
+            font-size: 0.9em;
+        }
+
+        /* Responsives Design */
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+            .price-details {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>PROSTALIS</h1>
+            <p class="hero-subtitle">SCHNELLE BEWÄLTIGUNG VON PROSTATAENTZÜNDUNG</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="section text-center">
+            <h2>100% Natural - Advanced Prostate Support</h2>
+            <p><strong>Von den führenden Andrologen gebilligt.</strong> Eine 100-prozentige Qualitätsgarantie, zusammengesetzt aus naturreinen Komponenten.</p>
+            
+            <div class="price-box">
+                <img src="prostalis.png" alt="Prostalis Kapseln">
+                <div class="price-details">
+                    <p>Normalpreis: <span class="old-price">98 EUR</span></p>
+                    <p style="color: #004d61; font-weight: bold;">Sie sparen 50%!</p>
+                    <p class="new-price">Nur 49 EUR</p>
+                </div>
+            </div>
+            
+            <a href="https://8kgqi.doctoreverd.com/l" class="btn">JETZT MIT 50% RABATT BESTELLEN</a>
+        </section>
+
+        <section class="section-dark section">
+            <div class="container">
+                <h2 class="text-center">Welche Probleme werden von Männerprostatitis verursacht?</h2>
+                <div class="grid-2">
+                    <div>
+                        <h3>Sexuelle Dysfunktion</h3>
+                        <p>Sexuelle Funktionsbeeinträchtigung, die Unfähigkeit, diese Funktion aufrechtzuerhalten oder zu so einer Stärke zu erzielen, die für einen intakten Geschlechtsverkehr notwendig ist.</p>
+                    </div>
+                    <div>
+                        <h3>Prostataadenom</h3>
+                        <p>Bösartige Erkrankung, die für Männer im Alter ab 45 bis 50 Jahre typisch ist. Sie lässt sich schlecht heilen und nimmt den Lebensstandard erheblich ab.</p>
+                    </div>
+                    <div>
+                        <h3>Prostatakarzinom</h3>
+                        <p>Bösartige Neubildung, die durch eine Prostatadrüsenepithel-Zelltransformation verursacht wird.</p>
+                    </div>
+                </div>
+                
+                <div class="warning-box">
+                    Die Prostatagewebe-Entzündung und Ödem droht mit gravierenden Folgen. Wir empfehlen Ihnen, unverzüglich mit der Behandlung anzufangen!
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="text-center">Zahlreiche Problemlösungsvarianten werden bei Ärzten vorgeschlagen. DIE WAHL LIEGT JEDOCH BEI IHNEN</h2>
+            <p class="text-center">Klassische und oft unangenehme Methoden umfassen: <strong>Prostatamassage, Lasertherapie, Steroide, Ballondilatation.</strong></p>
+            <br>
+            <h3 class="text-center" style="color:#e63946;">Prostalis ist eine sichere Problemlösung</h3>
+            <p class="text-center">PROSTALIS, ein organisches Präparat, wurde zum ersten Mal in einer wissenschaftlichen Konferenz der Amerikanischen Urologischen Gesellschaft vorgestellt.</p>
+            
+            <div class="text-center">
+                <a href="https://8kgqi.doctoreverd.com/l" class="btn">SICHERE ALTERNATIVE BESTELLEN (49 EUR)</a>
+            </div>
+        </section>
+
+        <section class="section section-dark">
+            <div class="container">
+                <h2 class="text-center">Prostalis ist ein erstklassiges Mittel gegen Prostatitis</h2>
+                <ul class="check-list" style="max-width: 700px; margin: 0 auto; padding-top: 20px;">
+                    <li>Es hat eine entzündungs- und ödemhemmende Wirkung.</li>
+                    <li>Trägt zur Beseitigung von Schmerzsyndrom bei.</li>
+                    <li>Verbessert Wasserlassen und erektile Funktion.</li>
+                    <li>Verringert den Umfang der Prostata.</li>
+                    <li>Normalisiert die Mikrozirkulation des Blutes durch Harnflussförderung.</li>
+                    <li>Verringert das Risiko eines Adenoms und eines Krebstumorwachstums.</li>
+                    <li>Wiederherstellt sexuelles Verlangen.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="text-center">Beeindruckende Ergebnisse aus der Forschung</h2>
+            <p class="text-center">An der experimentellen Therapie nahmen mehr als <strong>80.000 Männer mit Prostataentzündung</strong> teil. Die Laborbefunde einer neuen amerikanischen Innovationsentwicklung zeigten beeindruckende Ergebnisse:</p>
+            
+            <div class="grid-4" style="margin-top: 30px;">
+                <div class="stat-box" style="background:#004d61; color:white;">
+                    <h3>98%</h3>
+                    <p>Fühlten nicht mehr Leisten- und Kreuzschmerzen, -brennen und -schneiden.</p>
+                </div>
+                <div class="stat-box" style="background:#004d61; color:white;">
+                    <h3>100%</h3>
+                    <p>Wurden Prostataentzündungen und Ödeme los.</p>
+                </div>
+                <div class="stat-box" style="background:#004d61; color:white;">
+                    <h3>100%</h3>
+                    <p>Fühlen erleichtertes Wasserlassen.</p>
+                </div>
+                <div class="stat-box" style="background:#004d61; color:white;">
+                    <h3>97%</h3>
+                    <p>Verschwanden Ejakulation- und Erektionsprobleme.</p>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="https://8kgqi.doctoreverd.com/l" class="btn">PROSTALIS HEUTE TESTEN</a>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="text-center">Entzündung der Prostata kann die Ursache für viele männliche Probleme sein!</h2>
+            <p class="text-center">Basierend auf den Ergebnissen unserer Umfrage von Urologen und Sexologen:</p>
+            
+            <div class="grid-2" style="margin-top: 30px;">
+                <div>
+                    <h3>Statistiken nach Alter:</h3>
+                    <ul>
+                        <li><strong>Von 20 bis 35 Jahren:</strong> Entzündung wird bei 45% der Männer fixiert. Impotenz bei 20%.</li>
+                        <li><strong>Von 30 bis 50 Jahren:</strong> Entzündung wird bei 75% der Männer fixiert. Impotenz bei 40%.</li>
+                        <li><strong>Nach 50 Jahren:</strong> Entzündung wird bei 95% der Männer fixiert. Impotenz bei 80%.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Natürliche Formel von Prostalis hilft bei:</h3>
+                    <ul class="check-list" style="font-size: 0.9em;">
+                        <li>Unwilligkeit oder schwaches Verlangen nach Sex</li>
+                        <li>Schwache oder fehlende Erektion</li>
+                        <li>Vorzeitige Ejakulation</li>
+                        <li>Schmerzen im Bereich der Damm, Hoden und Leiste</li>
+                        <li>Schmerzen und Brennen beim Wasserlassen</li>
+                        <li>Gefühl der unvollständigen Blasenentleerung</li>
+                        <li>Nächtlicher Harndrang</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="expert-box">
+                <p><strong>Fachliche Stellungnahme:</strong><br>
+                "Das Entfernen der Entzündung und das Normalisieren der Größe der Prostata kann die männliche Gesundheit wiederherstellen. Mit einer Wahrscheinlichkeit von 98% brauchen Sie keine anderen Medikamente gegen erektile Dysfunktion! Wenn Prostatitis beseitigt wird, kann die Potenz sich natürlich wiederherstellen." <br>
+                <em>- Eduard Schubert (Arzt, Urologe-Androloge)</em></p>
+            </div>
+        </section>
+
+        <section class="section text-center section-dark">
+            <h2>Helfen Sie Ihrer Prostata und gewinnen Sie Ihre Potenz zurück</h2>
+            <p>Völlig natürliche Zusammensetzung. Funktioniert unabhängig von der Phase der Prostatitis.</p>
+            <p><strong>Insgesamt für einen einzelnen Kurs hilft Prostalis:</strong> Symptome zu beseitigen, Erektion wiederherzustellen und ein jahrelang anhaltendes Ergebnis zu sichern.</p>
+            
+            <div class="price-box" style="background-color: rgba(255,255,255,0.1); border-color: #ff9800; color: #fff;">
+                <img src="prostalis.png" alt="Prostalis Kapseln">
+                <div class="price-details">
+                    <p style="font-size: 1.2em;">Aktionspreis:</p>
+                    <p><strong style="font-size: 3em; color:#ff9800; line-height: 1;">49 EUR</strong></p>
+                </div>
+            </div>
+            
+            <a href="https://8kgqi.doctoreverd.com/l" class="btn" style="font-size: 1.5em; padding: 20px 40px;">JETZT BESTELLEN (50% RABATT)</a>
+        </section>
+
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Prostalis. Alle Rechte vorbehalten.</p>
+            <p>Dies ist ein Nahrungsergänzungsmittel. 100% Natural. Guaranteed Quality.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
